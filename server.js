@@ -178,7 +178,7 @@ app.post("/pessoa/excluir", authPerfil(["inspetoria", "ccp"]), (req, res) => {
 });
 
 // Iniciar pessoa
-app.post("/pessoa/iniciar", authPerfil(["inspetoria", "ccp", "turma"]), (req, res) => {
+app.post("/pessoa/iniciar", authPerfil(["inspetoria", "ccp"]), (req, res) => {
   try {
     const { id } = req.body;
 

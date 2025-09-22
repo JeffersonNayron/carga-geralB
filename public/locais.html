@@ -19,7 +19,7 @@ h2 { text-align: center; color: #00737a; margin-bottom: 20px; font-weight: 600; 
 .local-container { background: #ffffff; border-radius: 10px; padding: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
 .local-container h3 { color: #c0305e; font-weight: 600; margin-bottom: 10px; text-align: center; }
 table { width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 0.85rem; }
-th, td { text-align: center; padding: 6px 8px; vertical-align: middle; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+th, td { text-align: center; padding: 6px 8px; vertical-align: middle; overflow: visible !important;  text-overflow: unset !important; white-space: normal !important; }
 th { background-color: #00737a; color: #fff; font-weight: 500; }
 tbody tr:nth-child(even) { background-color: #e6f6f5; }
 tbody tr:hover { background-color: #c0ece8; transition: 0.3s; }
@@ -36,13 +36,13 @@ td.nome { color: #00737a; font-weight: 500; }
 </div>
 
 <script>
-const LOCALS = ['CG/OEM','Pial','Oficina'];
+const LOCALS = ['OFC/OEM','Pial','Carga Geral'];
 
 // Apenas para exibição
 const LOCAL_DISPLAY_NAMES = {
-    'CG/OEM': 'Carga Geral/ OEM',
+    'OFC/OEM': 'Oficina/ OEM',
     'Pial': 'Pial',
-    'Oficina': 'Oficina'
+    'Carga Geral': 'Carga Geral'
 };
 
 async function carregarPessoasPorLocal() {
