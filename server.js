@@ -1,5 +1,5 @@
 // server.js - Sistema de Revezamento (Better SQLite3 + Polling 1s)
-const TOKEN_FIXO = "cvrd@1942VL"; // Token fixo para redefinir senha
+const TOKEN_FIXO = "vale@25axd"; // Token fixo para redefinir senha
 const express = require("express");
 const session = require("express-session");
 const path = require("path");
